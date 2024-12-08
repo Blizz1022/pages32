@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categorías</title>
+  <link rel="stylesheet" href="Inicio.css">
+</head>
+<body>
+  <header id="header">
+    <div class="navbar">
+      <div class="marquee">
+        <p>
+          Bienvenido en la zona de categorías. <br><br>
+          Elija su categoría que quieras ver o buscas para resolver dudas.
+        </p>
+      </div>
+    </div>
+  </header>
+  <button class="custom-button" id="startButton">
+    <h2>Floristería</h2>
+      </button>
+    <button class="custom-buttonw" id="startButton">
+      <h2>Taller Mecanica</h2>
+    </button>
+      <button class="custom-buttonc" id="startButton">
+        <h2>Libreria</h2>
+      </button>
+        <button class="custom-buttonm" id="startButton">
+          <h2>Tienda de Reparacion de PC y Moviles</h2>
+        </button>
+          <button class="custom-buttona" id="startButton">
+            <h2>Bar de copas</h2>
+          </button>
+            <button class="custom-buttonr" id="startButton">
+              <h2>Instaladora de Aire Acondicionado</h2>
+            </button>
+              <button class="custom-buttonq" id="startButton">
+                <h2>Academia de Formacion para Oposicion de Bombero, Policia...</h2>
+              </button>
+                <button class="custom-buttonp" id="startButton">
+                  <h2>Gimnasio</h2>
+                </button> 
+                  <button class="custom-buttonñ" id="startButton">
+                    <h2>Tienda Friki</h2>                                                   
+  </button>
+  <div id="loader" style="display: none;">
+    <div class="spinner"></div>
+  </div>
+  <script>
+    document.querySelectorAll('.custom-button').forEach(button => {
+      button.addEventListener('click', () => {
+        // Ocultar el contenido actual
+        document.body.innerHTML = ''; 
+  
+        // Crear y mostrar el loader centrado
+        const loader = document.createElement('div');
+        loader.id = 'loader';
+        loader.style.display = 'flex';
+        loader.style.justifyContent = 'center';
+        loader.style.alignItems = 'center';
+        loader.style.height = '100vh'; // Asegura que ocupe toda la altura de la pantalla
+        loader.innerHTML = '<div class="spinner"></div>';
+        document.body.appendChild(loader);
+  
+        // Esperar 5 segundos y redirigir
+        setTimeout(() => {
+          window.location.href = 'Floristeria.html'; // Cambia por la ruta de tu página HTML
+        }, 3000);
+      });
+    });
+  </script>
+      <script>
+        document.querySelectorAll('.custom-buttonw').forEach(button => {
+          button.addEventListener('click', () => {
+            // Ocultar el contenido actual
+            document.body.innerHTML = ''; 
+      
+            // Crear y mostrar el loader centrado
+            const loader = document.createElement('div');
+            loader.id = 'loader';
+            loader.style.display = 'flex';
+            loader.style.justifyContent = 'center';
+            loader.style.alignItems = 'center';
+            loader.style.height = '100vh'; // Asegura que ocupe toda la altura de la pantalla
+            loader.innerHTML = '<div class="spinner"></div>';
+            document.body.appendChild(loader);
+      
+            // Esperar 5 segundos y redirigir
+            setTimeout(() => {
+              window.location.href = 'TallerMecanica.html'; // Cambia por la ruta de tu página HTML
+            }, 3000);
+          });
+        });
+      </script>
+      <script>
+        document.querySelectorAll('.custom-buttonc').forEach(button => {
+          button.addEventListener('click', () => {
+            // Ocultar el contenido actual
+            document.body.innerHTML = ''; 
+      
+            // Crear y mostrar el loader centrado
+            const loader = document.createElement('div');
+            loader.id = 'loader';
+            loader.style.display = 'flex';
+            loader.style.justifyContent = 'center';
+            loader.style.alignItems = 'center';
+            loader.style.height = '100vh'; // Asegura que ocupe toda la altura de la pantalla
+            loader.innerHTML = '<div class="spinner"></div>';
+            document.body.appendChild(loader);
+      
+            // Esperar 5 segundos y redirigir
+            setTimeout(() => {
+              window.location.href = 'Libreria.html'; // Cambia por la ruta de tu página HTML
+            }, 3000);
+          });
+        });
+      </script>
+      <script>
+    document.querySelectorAll('.custom-buttonm').forEach(button => {
+      button.addEventListener('click', () => {
+        // Ocultar el contenido actual
+        document.body.innerHTML = ''; 
+  
+        // Crear y mostrar el loader centrado
+        const loader = document.createElement('div');
+        loader.id = 'loader';
+        loader.style.display = 'flex';
+        loader.style.justifyContent = 'center';
+        loader.style.alignItems = 'center';
+        loader.style.height = '100vh'; // Asegura que ocupe toda la altura de la pantalla
+        loader.innerHTML = '<div class="spinner"></div>';
+        document.body.appendChild(loader);
+  
+        // Esperar 5 segundos y redirigir
+        setTimeout(() => {
+          window.location.href = 'TiendaReparacion.html'; // Cambia por la ruta de tu página HTML
+        }, 3000);
+      });
+    });
+  </script><script>
+    document.querySelectorAll('.custom-buttona').forEach(button => {
+      button.addEventListener('click', () => {
+        // Ocultar el contenido actual
+        document.body.innerHTML = ''; 
+  
+        // Crear y mostrar el loader centrado
+        const loader = document.createElement('div');
+        loader.id = 'loader';
+        loader.style.display = 'flex';
+        loader.style.justifyContent = 'center';
+        loader.style.alignItems = 'center';
+        loader.style.height = '100vh'; // Asegura que ocupe toda la altura de la pantalla
+        loader.innerHTML = '<div class="spinner"></div>';
+        document.body.appendChild(loader);
+  
+        // Esperar 5 segundos y redirigir
+        setTimeout(() => {
+          window.location.href = 'BarDeCopas.html'; // Cambia por la ruta de tu página HTML
+        }, 3000);
+      });
+    });
+  </script><script>
+    document.querySelectorAll('.custom-buttonr').forEach(button => {
+      button.addEventListener('click', () => {
+        // Ocultar el contenido actual
+        document.body.innerHTML = ''; 
+  
+        // Crear y mostrar el loader centrado
+        const loader = document.createElement('div');
+        loader.id = 'loader';
+        loader.style.display = 'flex';
+        loader.style.justifyContent = 'center';
+        loader.style.alignItems = 'center';
+        loader.style.height = '100vh'; // Asegura que ocupe toda la altura de la pantalla
+        loader.innerHTML = '<div class="spinner"></div>';
+        document.body.appendChild(loader);
+  
+        // Esperar 5 segundos y redirigir
+        setTimeout(() => {
+          window.location.href = 'InstaladoraAire.html'; // Cambia por la ruta de tu página HTML
+        }, 3000);
+      });
+    });
+  </script><script>
+    document.querySelectorAll('.custom-buttonq').forEach(button => {
+      button.addEventListener('click', () => {
+        // Ocultar el contenido actual
+        document.body.innerHTML = ''; 
+  
+        // Crear y mostrar el loader centrado
+        const loader = document.createElement('div');
+        loader.id = 'loader';
+        loader.style.display = 'flex';
+        loader.style.justifyContent = 'center';
+        loader.style.alignItems = 'center';
+        loader.style.height = '100vh'; // Asegura que ocupe toda la altura de la pantalla
+        loader.innerHTML = '<div class="spinner"></div>';
+        document.body.appendChild(loader);
+  
+        // Esperar 5 segundos y redirigir
+        setTimeout(() => {
+          window.location.href = 'AcademiaFormacion.html'; // Cambia por la ruta de tu página HTML
+        }, 3000);
+      });
+    });
+  </script>
+  <script>
+    document.querySelectorAll('.custom-buttonp').forEach(button => {
+      button.addEventListener('click', () => {
+        // Ocultar el contenido actual
+        document.body.innerHTML = ''; 
+  
+        // Crear y mostrar el loader centrado
+        const loader = document.createElement('div');
+        loader.id = 'loader';
+        loader.style.display = 'flex';
+        loader.style.justifyContent = 'center';
+        loader.style.alignItems = 'center';
+        loader.style.height = '100vh'; // Asegura que ocupe toda la altura de la pantalla
+        loader.innerHTML = '<div class="spinner"></div>';
+        document.body.appendChild(loader);
+  
+        // Esperar 5 segundos y redirigir
+        setTimeout(() => {
+          window.location.href = 'Gimnasio.html'; // Cambia por la ruta de tu página HTML
+        }, 3000);
+      });
+    });
+  </script>
+  <script>
+    document.querySelectorAll('.custom-buttonñ').forEach(button => {
+      button.addEventListener('click', () => {
+        // Ocultar el contenido actual
+        document.body.innerHTML = ''; 
+  
+        // Crear y mostrar el loader centrado
+        const loader = document.createElement('div');
+        loader.id = 'loader';
+        loader.style.display = 'flex';
+        loader.style.justifyContent = 'center';
+        loader.style.alignItems = 'center';
+        loader.style.height = '100vh'; // Asegura que ocupe toda la altura de la pantalla
+        loader.innerHTML = '<div class="spinner"></div>';
+        document.body.appendChild(loader);
+  
+        // Esperar 5 segundos y redirigir
+        setTimeout(() => {
+          window.location.href = 'TiendaFriki.html'; // Cambia por la ruta de tu página HTML
+        }, 3000);
+      });
+    });
+  </script>
+</body>
+</html>

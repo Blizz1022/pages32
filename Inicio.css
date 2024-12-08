@@ -1,0 +1,614 @@
+body{
+background: #121212; 
+height: 25vh;
+}
+
+
+        /* Barra de navegación */
+        .navbar {
+          background: linear-gradient(45deg, purple, blue); /* Fondo degradado */
+          color: white;
+          height: 100px; /* Altura de la barra */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          position: relative;
+          font-family: sans-serif;
+          font-size: 25px;
+          text-align: center;
+          font-family: fantasy;
+      }
+
+      /* Contenedor del texto en movimiento */
+      .marquee {
+          position: absolute;
+          white-space: nowrap; /* Evita que el texto se rompa */
+          animation: marquee 10s linear infinite; /* Animación continua */
+      }
+
+      /* Definición de la animación */
+      @keyframes marquee {
+          0% {
+              transform: translateX(100%); /* Empieza fuera de la pantalla, a la derecha */
+          }
+          100% {
+              transform: translateX(-100%); /* Termina fuera de la pantalla, a la izquierda */
+          }
+      }
+
+      .categorias{
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-family: fantasy;
+  position: relative; top: 90px;
+}
+
+
+.custom-button {
+  position: absolute; left: 24%; top: 20%;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.custom-button h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+/* Fondo animado y gradiente */
+.custom-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Fondo desenfocado */
+.custom-button::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+/* Efectos al pasar el ratón */
+.custom-button:hover::after {
+  filter: blur(30px);
+}
+
+.custom-button:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+.custom-buttonw {
+  position: relative; left: 45%; top: 6vh; 
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.custom-buttonw h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+/* Fondo animado y gradiente */
+.custom-buttonw::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Fondo desenfocado */
+.custom-buttonw::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+/* Efectos al pasar el ratón */
+.custom-buttonw:hover::after {
+  filter: blur(30px);
+}
+
+.custom-buttonw:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+.custom-buttonc {
+  position: relative; left: 65%; bottom: 27vh;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.custom-buttonc h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+/* Fondo animado y gradiente */
+.custom-buttonc::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Fondo desenfocado */
+.custom-buttonc::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+/* Efectos al pasar el ratón */
+.custom-buttonc:hover::after {
+  filter: blur(30px);
+}
+
+.custom-buttonc:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+.custom-buttonm {
+  position: relative; left: 24%; bottom: 15vh;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.custom-buttonm h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+/* Fondo animado y gradiente */
+.custom-buttonm::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Fondo desenfocado */
+.custom-buttonm::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+/* Efectos al pasar el ratón */
+.custom-buttonm:hover::after {
+  filter: blur(30px);
+}
+
+.custom-buttonm:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+.custom-buttona {
+  position: relative; left: 45%; bottom: 48vh;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.custom-buttona h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+/* Fondo animado y gradiente */
+.custom-buttona::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Fondo desenfocado */
+.custom-buttona::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+/* Efectos al pasar el ratón */
+.custom-buttona:hover::after {
+  filter: blur(30px);
+}
+
+.custom-buttona:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+.custom-buttonr {
+  position: relative; left: 65%; bottom: 81vh;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.custom-buttonr h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+/* Fondo animado y gradiente */
+.custom-buttonr::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Fondo desenfocado */
+.custom-buttonr::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+/* Efectos al pasar el ratón */
+.custom-buttonr:hover::after {
+  filter: blur(30px);
+}
+
+.custom-buttonr:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+.custom-buttonq {
+  position: relative; left: 24%; bottom: 70vh;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.custom-buttonq h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+/* Fondo animado y gradiente */
+.custom-buttonq::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Fondo desenfocado */
+.custom-buttonq::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+/* Efectos al pasar el ratón */
+.custom-buttonq:hover::after {
+  filter: blur(30px);
+}
+
+.custom-buttonq:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+.custom-buttonp {
+  position: relative; left: 45%; bottom: 103vh;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.custom-buttonp h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+/* Fondo animado y gradiente */
+.custom-buttonp::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Fondo desenfocado */
+.custom-buttonp::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+/* Efectos al pasar el ratón */
+.custom-buttonp:hover::after {
+  filter: blur(30px);
+}
+
+.custom-buttonp:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+.custom-buttonñ {
+  position: relative; left: 65%; bottom: 135vh;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.custom-buttonñ h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+/* Fondo animado y gradiente */
+.custom-buttonñ::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Fondo desenfocado */
+.custom-buttonñ::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+/* Efectos al pasar el ratón */
+.custom-buttonñ:hover::after {
+  filter: blur(30px);
+}
+
+.custom-buttonñ:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+
+.spinner {
+  background-image: linear-gradient(rgb(186, 66, 255) 35%, rgb(0, 225, 255));
+  width: 100px;
+  height: 100px;
+  animation: spinning82341 1.7s linear infinite, hue 1s ease-in-out infinite;
+  border-radius: 50px;
+  filter: blur(1px);
+  box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+}
+
+@keyframes spinning82341 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

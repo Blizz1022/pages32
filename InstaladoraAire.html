@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AC.css">
+    <title>Instaladora de AC</title>
+</head>
+<body>    
+    <header>
+    <div class="cabecera">
+        <h1 class="titulo">Instaladora de AC</h1>
+    </div>
+    </header>
+    <div class="inicio">
+    <h2>Instaladora de Aire Acondicionado</h2>
+    <p>Si nececitas un aire acondicionado, nosotros te ayudamos a instalarlo</p>
+    </div>
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">☰</a>
+        <ul class="nav">
+            <li><a href="#">Modelos</a></li>
+            <li><a href="#">Instalacion</a></li>
+        </ul>
+    </div>
+    
+    <div id="main">
+        <button onclick="toggleSidebar()" class="plusButton">Mostrar/Ocultar Menú</button>
+    </div>
+    <a href="Categorias.html" class="boton-elegante">Volver</a>  
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+            } else {
+                sidebar.style.width = "250px";
+            }
+        }
+            </script>
+</body>
+</html>

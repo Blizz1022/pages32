@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar de Copas</title>
+    <link rel="stylesheet" href="bardecopas.css">
+</head>
+<body>
+    <header>
+    <div class="cabecera">
+        <h1 class="titulo">Bar de Copas</h1>
+    </div>
+    </header>
+    <div class="inicio">
+    <h2>Bar de Copas</h2>
+    <p>Bienvenido al bar para pasar el rato con sus colegas y tomarte algo mientras estais charlando, jugando a poker, etc...</p>
+    </div>
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">☰</a>
+        <ul class="nav">
+            <li><a href="#">Sudaderas</a></li>
+            <li><a href="#">Camisetas</a></li>
+            <li><a href="#">Figuras</a></li>
+        </ul>
+    </div>
+    <a href="Categorias.html" class="boton-elegante">Volver</a>  
+
+    <div id="main">
+        <button onclick="toggleSidebar()" class="plusButton">Mostrar/Ocultar Menú</button>
+    </div>
+      <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+            } else {
+                sidebar.style.width = "250px";
+            }
+        }
+            </script>
+</body>
+</html>

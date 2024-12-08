@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentacion</title>
+  <link rel="stylesheet" href="Principal.css">
+</head>
+<body>
+  <div id="buttonContainer">
+    <!-- Primer botón -->
+    <div class="button-3d" id="firstButton">Bienvenido</div>
+  </div>
+
+  <!-- Contenido que aparece -->
+  <div class="content hidden" id="newContent">
+    <h2>Bienvenido a mi Proyecto</h2>
+    <p>
+      El proyecto de hoy consiste en crear una página web <br /><br />
+      Kit digital necesita nuestra ayuda de crear una página web para su empresa <br /><br />
+      Pero la página debe incluir unas categorías que son:
+    </p>
+    <br /><br />
+    <!-- Botones secundarios -->
+    <div class="button-3d" id="categoriesButton">Categorías</div>
+    <div class="button-3de" id="backButton">Volver</div>
+  </div>
+
+  <!-- Loader -->
+  <div id="loaderContainer">
+    <div class="loader">
+      <span></span>
+    </div>
+  </div>
+
+  <script>
+    const firstButton = document.getElementById("firstButton");
+    const newContent = document.getElementById("newContent");
+    const categoriesButton = document.getElementById("categoriesButton");
+    const backButton = document.getElementById("backButton");
+    const loaderContainer = document.getElementById("loaderContainer");
+
+    // Evento para el primer botón
+    firstButton.addEventListener("click", () => {
+      // Oculta el primer botón
+      firstButton.classList.add("hidden");
+
+      // Muestra el nuevo contenido con animación
+      newContent.classList.remove("hidden");
+      setTimeout(() => {
+        newContent.classList.add("visible");
+      }, 10);
+    });
+
+    // Evento para el botón de categorías
+    categoriesButton.addEventListener("click", () => {
+      // Oculta el contenido actual
+      newContent.classList.add("hidden");
+
+      // Muestra el loader
+      loaderContainer.style.display = "flex";
+
+      // Redirigir después de 10 segundos
+      setTimeout(() => {
+        window.location.href = "Categorias.html";
+      }, 5000);
+    });
+
+    // Evento para el botón de volver
+    backButton.addEventListener("click", () => {
+      // Oculta el contenido con animación
+      newContent.classList.remove("visible");
+      setTimeout(() => {
+        newContent.classList.add("hidden");
+        firstButton.classList.remove("hidden");
+      }, 500); // Tiempo para la transición de ocultar
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libreria.css">
+    <title>Libreria</title>
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <h1 class="titulo">Libreria</h1>
+        </div>
+        </header>
+        <div class="inicio">
+        <h2>Libreria</h2>
+        <p>Bienvenido a la libreria donde puedes encontrar tus libros preferidos, peliculas favoritos, periodicos...</p>
+        </div>
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">☰</a>
+            <ul class="nav">
+                <li><a href="#">Peliculas</a></li>
+                <li><a href="#">Libros</a></li>
+                <li><a href="#">Periodicos</a></li>
+            </ul>
+        </div>
+        <a href="Categorias.html" class="boton-elegante">Volver</a>  
+
+        <div id="main">
+            <button onclick="toggleSidebar()" class="plusButton">Mostrar/Ocultar Menú</button>
+        </div>
+          <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById("sidebar");
+                if (sidebar.style.width === "250px") {
+                    sidebar.style.width = "0";
+                } else {
+                    sidebar.style.width = "250px";
+                }
+            }
+                </script>
+</body>
+</html>

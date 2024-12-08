@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tiendafriki.css">
+    <title>Tienda Friki</title>
+</head>
+<body>
+    <header class="header">
+    <h1 class="titulo">Tienda Friki</h1>
+    </header>
+    <div id="sidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">☰</a>
+      <ul class="nav">
+          <li><a href="#">Sudaderas</a></li>
+          <li><a href="#">Camisetas</a></li>
+          <li><a href="#">Figuras</a></li>
+      </ul>
+  </div>
+  
+  <div id="main">
+      <button onclick="toggleSidebar()" class="plusButton">Mostrar/Ocultar Menú</button>
+  </div>
+    <div class="subtitulo">
+    <h2>Tienda Friki</h2>
+    <p>Bienvenido a la tienda. <br><br> Esta es la primera apertura donde vas a encontrar camisestas, sudaderas y figuras. A lo largo del tiempo se va a ir añadiendo más productos.</p>
+    <a href="Categorias.html" class="boton-elegante">Volver</a>  
+    </div>
+    <script>
+      function toggleSidebar() {
+          const sidebar = document.getElementById("sidebar");
+          if (sidebar.style.width === "250px") {
+              sidebar.style.width = "0";
+          } else {
+              sidebar.style.width = "250px";
+          }
+      }
+          </script>
+</body>
+</html>

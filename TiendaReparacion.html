@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tiendaR.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="cabecera"></div>
+        </header>
+        <div class="inicio">
+        <h2>Tienda de reparacion</h2>
+        <p>Bienvenido a la tienda de reparacion donde si tu movil, pc o cualquier dispositivo, te lo podemos arreglar</p>
+        </div>
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">☰</a>
+            <ul class="nav">
+                <li><a href="#">Pc</a></li>
+                <li><a href="#">Moviles</a></li>
+            </ul>
+        </div>
+        <a href="Categorias.html" class="boton-elegante">Volver</a>  
+
+        <div id="main">
+            <button onclick="toggleSidebar()" class="plusButton">Mostrar/Ocultar Menú</button>
+        </div>
+          <script>
+            function toggleSidebar() {
+                const sidebar = document.getElementById("sidebar");
+                if (sidebar.style.width === "250px") {
+                    sidebar.style.width = "0";
+                } else {
+                    sidebar.style.width = "250px";
+                }
+            }
+                </script>
+</body>
+</html>
